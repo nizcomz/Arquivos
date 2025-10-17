@@ -1,0 +1,43 @@
+
+Claro! Aqui está a explicação passo a passo do código:
+
+Importação de bibliotecas
+O código importa pyautogui (como pa) para automação de teclado e mouse, e time para controlar pausas.
+
+Configuração de pausa
+Define um tempo de pausa (pa.pause = 1) entre cada comando do PyAutoGUI, tornando a automação mais estável.
+
+Abrir o menu iniciar e pesquisar o Opera
+
+Pressiona a tecla Windows (pa.press('win')).
+Digita "opera" para pesquisar o navegador.
+Pressiona Enter para abrir o Opera.
+Aguardar o navegador abrir
+Usa time.sleep(2) para esperar 2 segundos até o navegador estar pronto.
+
+Acessar o YouTube
+
+Usa o atalho Ctrl + L para focar na barra de endereços.
+Digita a URL do YouTube.
+Pressiona Enter para acessar o site.
+Aguardar o carregamento do YouTube
+Espera 3 segundos para garantir que a página carregue.
+
+Clicar na barra de pesquisa do YouTube
+Usa pa.click(x, y) para clicar na barra de pesquisa (as coordenadas podem precisar de ajuste conforme sua tela).
+
+Pesquisar pelo vídeo desejado
+
+Digita o termo de busca: "Panico cartas a una desconocida".
+Pressiona Enter para pesquisar.
+Aguardar os resultados aparecerem
+Espera 2 segundos para garantir que os resultados carreguem.
+
+Clicar no primeiro vídeo da lista
+Usa pa.click(x, y) para clicar no primeiro vídeo (as coordenadas também podem precisar de ajuste).
+
+Aguardar o vídeo carregar
+Espera mais 2 segundos para garantir que o vídeo comece a carregar.
+
+Resumo:
+O script automatiza a abertura do navegador Opera, acessa o YouTube, faz uma busca e clica no primeiro vídeo encontrado, tudo de forma automática usando comandos de teclado e mouse.
