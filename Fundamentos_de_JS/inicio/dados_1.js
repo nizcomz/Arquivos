@@ -21,4 +21,7 @@ console.log('Categoria: '+ produto);
 let nomeProduto = 'Caderno';
 let nome_produto = 'Caderno';
 let NomeProduto = 'Caderno';
+
+git teste   
+
 */
