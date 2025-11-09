@@ -16,3 +16,9 @@ if (botao && contador) {
 } else {
     console.warn('Elemento(s) #meuBotao ou #contador não encontrado(s) no DOM.');
 }
+
+// Função para zerar contador
+resetBotao.addEventListener('click', function() {
+  cliques = 0;
+  contador.textContent = cliques; // Atualiza na tela
+});
