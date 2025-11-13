@@ -13,15 +13,15 @@ let precofinal = preco + imposto;
 // Exibindo valores no console
 
 console.log('Produto: ' + produto);
-console.log('Quantidade: '+ quantidade + ' unidades');
-console.log('Valor do produto: R$'+ preco);
-console.log('Valor de imposto: R$'+ imposto);
-console.log('Valor final: R$'+ precofinal);
+console.log('Quantidade: ' + quantidade + ' unidades');
+console.log('Valor do produto: R$' + preco);
+console.log('Valor de imposto: R$' + imposto);
+console.log('Valor final: R$' + precofinal);
 
 // Alterando o valor da variável
 
 produto = 'Caneta BIC';
-console.log('Categoria: '+ produto);
+console.log('Categoria: ' + produto);
 
 /* Nomes de variáveis com mais de uma palavra
 let nomeProduto = 'Caderno';

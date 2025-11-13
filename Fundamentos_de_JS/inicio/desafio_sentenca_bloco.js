@@ -28,7 +28,7 @@ for (let i = 1; i <= 9; i += 2) console.log(i)
 
 console.log('Números pares:')
 for (let i = 2; i <= 10; i += 2) console.log(i)
-    
+
 /*
 A estrutura de repetição "for" é utilizada para repetir um bloco de código um número específico de vezes,
 neste caso, para exibir números ímpares e pares dentro de um intervalo definido.
