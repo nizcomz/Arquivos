@@ -9,7 +9,7 @@ const contador = document.getElementById('contador');
 // Função que será chamado quando o botão for clicado 
 
 if (botao && contador) {
-    botao.addEventListener('click', function() {
+    botao.addEventListener('click', function () {
         cliques++; // incrementa o contador
         contador.textContent = cliques; // Atualiza o texto
     });
@@ -18,7 +18,7 @@ if (botao && contador) {
 }
 
 // Função para zerar contador
-resetBotao.addEventListener('click', function() {
-  cliques = 0;
-  contador.textContent = cliques; // Atualiza na tela
+resetBotao.addEventListener('click', function () {
+    cliques = 0;
+    contador.textContent = cliques; // Atualiza na tela
 });
