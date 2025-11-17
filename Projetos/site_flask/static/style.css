@@ -1,28 +1,332 @@
+/* ========== VARIÁVEIS E TEMA ========== */
+:root {
+    --cor-primaria: #3d5a80;
+    --cor-secundaria: #98c1d9;
+    --cor-danger: #e63946;
+    --cor-fundo: #f0f4f8;
+    --cor-texto: #293241;
+    --cor-borda: #d0d0d0;
+    --transition: all 0.3s ease;
+}
+
+body.tema-escuro {
+    --cor-fundo: #1a1a1a;
+    --cor-texto: #e0e0e0;
+    --cor-borda: #444;
+}
+
+/* ========== ESTILO GERAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: #f0f4f8;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    transition: var(--transition);
+}
+
+/* ========== CONTAINER ========== */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========== HEADER ========== */
+.header {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+    color: white;
+    padding: 40px 0;
     text-align: center;
-    font-family: Arial, sans-serif;
-    margin-top: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
-h1 {
-    color: #293241;
-    font-size:  2em;
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-p {
-    font-size: 18px;
-    color: #333;
+
+.subtitle {
+    font-size: 1.1em;
+    opacity: 0.9;
+    margin-bottom: 20px;
 }
-button {
-    background: #3d5a80;
-    color: #fff;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 8px;
-    font-size: 16px;
-    margin: 18px;
+
+.btn-tema {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 1em;
+    transition: var(--transition);
 }
-button:hover {
-    background: #98c1d9;
-    color: #293241
+
+.btn-tema:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* ========== SEÇÕES ========== */
+.secao {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+body.tema-escuro .secao {
+    background: #2a2a2a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.secao h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--cor-secundaria);
+    padding-bottom: 10px;
+}
+
+/* ========== BOTÕES ========== */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    margin: 8px;
+}
+
+.btn-primary {
+    background: var(--cor-primaria);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2c4563;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(61, 90, 128, 0.3);
+}
+
+.btn-secondary {
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.btn-secondary:hover {
+    background: #7ab5d1;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: var(--cor-danger);
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #d62828;
+    transform: translateY(-2px);
+}
+
+/* ========== FORMULÁRIOS ========== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="color"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: var(--transition);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="color"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(61, 90, 128, 0.1);
+}
+
+/* ========== CAIXAS ESPECIAIS ========== */
+.contador-box,
+.calculadora-box,
+.info-box,
+.cores-box {
+    background: var(--cor-fundo);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor-primaria);
+}
+
+body.tema-escuro .contador-box,
+body.tema-escuro .calculadora-box,
+body.tema-escuro .info-box,
+body.tema-escuro .cores-box {
+    background: #333;
+}
+
+/* ========== CONTADOR ========== */
+#contador {
+    font-size: 2.5em;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px;
+    animation: pulse 0.6s ease;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.numero {
+    background: var(--cor-secundaria);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* ========== RESULTADO ========== */
+.resultado {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado.ativo {
+    display: block;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== RESPOSTA DO FORMULÁRIO ========== */
+.resposta {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    display: none;
+    font-weight: 600;
+}
+
+.resposta.sucesso {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+    display: block;
+    animation: slideIn 0.3s ease;
+}
+
+.resposta.erro {
+    background: #ffebee;
+    color: #c62828;
+    border: 2px solid #c62828;
+    display: block;
+}
+
+/* ========== FORMULÁRIO ========== */
+.formulario {
+    background: var(--cor-fundo);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+body.tema-escuro .formulario {
+    background: #333;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .secao {
+        padding: 20px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+        font-size: 16px; /* Previne zoom em mobile */
+    }
+}
+
+/* ========== ANIMAÇÕES EXTRAS ========== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.secao {
+    animation: fadeIn 0.5s ease;
 }

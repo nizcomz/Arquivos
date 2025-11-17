@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
-        <title>Meu Site Com Python e Flask</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Site Interativo com Flask</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        <h1>Bem-vindo ao meu site criado com Python e Flask</h1>
-        <p>Essa pagina foi gerada usando Flask</p>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1>🚀 Meu Site Interativo com Flask</h1>
+                <p class="subtitle">Aplicação web dinâmica com Python e JavaScript</p>
+                <button class="btn-tema" id="btnTema">🌙 Tema Escuro</button>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="container">
+            
+            <!-- Seção 1: Contador -->
+            <section class="secao">
+                <h2>📊 Contador Interativo</h2>
+                <div class="contador-box">
+                    <p>Cliques: <span id="contador" class="numero">0</span></p>
+                    <button class="btn btn-primary" id="btnIncrementar">➕ Incrementar</button>
+                    <button class="btn btn-secondary" id="btnDecrementar">➖ Decrementar</button>
+                    <button class="btn btn-danger" id="btnResetar">🔄 Resetar</button>
+                </div>
+            </section>
+
+            <!-- Seção 2: Calculadora -->
+            <section class="secao">
+                <h2>🧮 Calculadora Simples</h2>
+                <div class="calculadora-box">
+                    <div class="form-group">
+                        <label>Número 1:</label>
+                        <input type="number" id="num1" placeholder="Digite um número" value="10">
+                    </div>
+                    <div class="form-group">
+                        <label>Operação:</label>
+                        <select id="operacao">
+                            <option value="soma">Soma (+)</option>
+                            <option value="subtracao">Subtração (-)</option>
+                            <option value="multiplicacao">Multiplicação (×)</option>
+                            <option value="divisao">Divisão (÷)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Número 2:</label>
+                        <input type="number" id="num2" placeholder="Digite um número" value="5">
+                    </div>
+                    <button class="btn btn-primary" id="btnCalcular">Calcular</button>
+                    <p id="resultadoCalc" class="resultado"></p>
+                </div>
+            </section>
+
+            <!-- Seção 3: Formulário de Contato -->
+            <section class="secao">
+                <h2>📧 Formulário de Contato</h2>
+                <form id="formularioContato" class="formulario">
+                    <div class="form-group">
+                        <label>Nome:</label>
+                        <input type="text" id="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensagem:</label>
+                        <textarea id="mensagem" placeholder="Escreva sua mensagem..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+                <div id="mensagemResposta" class="resposta"></div>
+            </section>
+
+            <!-- Seção 4: Informações Dinâmicas -->
+            <section class="secao">
+                <h2>ℹ️ Informações Dinâmicas</h2>
+                <div class="info-box">
+                    <p><strong>Hora atual:</strong> <span id="horaAtual">--:--:--</span></p>
+                    <p><strong>Data:</strong> <span id="dataAtual">--/--/--</span></p>
+                    <p><strong>User Agent:</strong> <span id="userAgent">Carregando...</span></p>
+                    <p><strong>Tema ativo:</strong> <span id="temaAtivo">Claro</span></p>
+                </div>
+            </section>
+
+            <!-- Seção 5: Cores Interativas -->
+            <section class="secao">
+                <h2>🎨 Mudador de Cores</h2>
+                <div class="cores-box">
+                    <p>Cor de fundo:</p>
+                    <input type="color" id="corFundo" value="#f0f4f8">
+                    <button class="btn btn-primary" id="btnMudarCor">Aplicar Cor</button>
+                    <button class="btn btn-secondary" id="btnCorAleatoria">Cor Aleatória</button>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 - Meu Site Interativo com Flask | Desenvolvido com ❤️</p>
+        </footer>
+
+        <!-- Script JavaScript -->
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
 </html>
