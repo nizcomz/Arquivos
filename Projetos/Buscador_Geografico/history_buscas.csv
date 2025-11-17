@@ -1,6 +1,0 @@
-timestamp,cidade,bairro,latitude,longitude,cep_geocoding,cep_viacep,viacep_url,status,resultado_text
-2025-11-17 13:49:36,Minas Novas,,-17.2174817,-42.5948698,,,,OK,Latitude: -17.2174817 | Longitude: -42.5948698 | UF não identificado - não foi possível consultar ViaCEP.
-2025-11-17 13:51:11,Minas Novas,,-17.2174817,-42.5948698,,,,OK,Latitude: -17.2174817 | Longitude: -42.5948698 | UF não identificado - não foi possível consultar ViaCEP.
-2025-11-17 13:51:27,Belo Horizonte,Centro,-19.9193308,-43.9403488,,,,OK,Latitude: -19.9193308 | Longitude: -43.9403488 | UF não identificado - não foi possível consultar ViaCEP.
-2025-11-17 13:57:00,Belo Horizonte,,-19.9227318,-43.9450948,,,,OK,Latitude: -19.9227318 | Longitude: -43.9450948 | UF não identificado - não foi possível consultar ViaCEP.
-2025-11-17 14:31:58,Minas Novas,Centro,-17.2170987,-42.5951338,,,,OK,Latitude: -17.2170987 | Longitude: -42.5951338 | UF não identificado - não foi possível consultar ViaCEP.
