@@ -37,20 +37,6 @@ python app.py
 # Acesse: http://localhost:5000
 ```
 
----
-
-### 3. **Interface Gráfica PySide6** `python/gui/`
-**Tech Stack**: Python + PySide6 (Qt)  
-**🔥 Features**:
-- Janela gráfica nativa
-- Interface desktop moderna
-
-**🚀 Como rodar**:
-```bash
-pip install PySide6
-python py_gui.py
-```
-
 ## 🛠️ Skills & Tecnologias
 
 | **Backend** | **Frontend** | **Ferramentas** |
