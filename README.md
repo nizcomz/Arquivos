@@ -69,8 +69,7 @@ python py_gui.py
 
 
 ## 📞 Contato
-- **Email**: hugo@example.com
-- **LinkedIn**: [linkedin.com/in/hugoniz](https://linkedin.com/in/hugoniz)
+- **Email**: hsniz78@yahoo.com
 - **📍 Minas Gerais, BR**
 
 <div align="center">
