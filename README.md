@@ -71,8 +71,3 @@ python py_gui.py
 ## 📞 Contato
 - **Email**: hsniz78@yahoo.com
 - **📍 Minas Gerais, BR**
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nizcomz&show_icons=true&theme=radical" width="48%"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nizcomz&theme=radical" width="38%"/>
-</div>
