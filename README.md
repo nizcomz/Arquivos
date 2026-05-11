@@ -21,8 +21,6 @@ Olá! Sou Hugo, desenvolvedor em formação focado em **Python**, **JavaScript**
 # Clique e teste!
 ```
 
-**📱 Demo**: [Clique para ver código](web/contador-cliques/index.html)
-
 ---
 
 ### 2. **Site com Flask** `web/site-flask/`
