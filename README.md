@@ -9,23 +9,15 @@ Olá! Sou Hugo, desenvolvedor em formação focado em **Python**, **JavaScript**
 ## 📁 Projetos em Destaque
 
 ### 1. **Contador de Cliques** `web/contador-cliques/`
-**Tech Stack**: HTML5, CSS3, Vanilla JavaScript  
-**🔥 Features**:
+HTML5, CSS3, JavaScript  
 - Contador em tempo real
 - Botão de reset
 - Design responsivo moderno
 
-**🚀 Como rodar**:
-```bash
-# Abra index.html no navegador
-# Clique e teste!
-```
-
 ---
 
 ### 2. **Site com Flask** `web/site-flask/`
-**Tech Stack**: Python + Flask + HTML/CSS  
-**🔥 Features**:
+Python + Flask + HTML/CSS  
 - Servidor web funcional
 - Templates HTML dinâmicos
 - Estilização CSS personalizada
