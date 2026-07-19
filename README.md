@@ -1,0 +1,49 @@
+# 🚀 Portfólio Hugo Niz - Desenvolvedor Júnior
+
+Olá! Sou Hugo, desenvolvedor em formação focado em **Python**, **JavaScript** e **Desenvolvimento Web Full-Stack**. Este repositório contém meus projetos práticos de aprendizado.
+
+[![GitHub stars](https://img.shields.io/github/stars/nizcomz/Arquivos?style=social)](https://github.com/nizcomz/Arquivos)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+## 📁 Projetos em Destaque
+
+### 1. **Contador de Cliques** `web/contador-cliques/`
+HTML5, CSS3, JavaScript  
+- Contador em tempo real
+- Botão de reset
+- Design responsivo moderno
+
+---
+
+### 2. **Site com Flask** `web/site-flask/`
+Python + Flask + HTML/CSS  
+- Servidor web funcional
+- Templates HTML dinâmicos
+- Estilização CSS personalizada
+
+**🚀 Como rodar**:
+```bash
+pip install flask
+python app.py
+# Acesse: http://localhost:5000
+```
+
+## 🛠️ Skills & Tecnologias
+
+| **Backend** | **Frontend** | **Ferramentas** |
+|-------------|--------------|-----------------|
+| Python, Flask | HTML5, CSS3, JavaScript | Git/GitHub, VSCode |
+| PySide6/Qt | Bootstrap (em estudo) | Terminal/Bash |
+
+## 📈 Roadmap 2026
+- [x] Projetos web básicos (JS + Flask)
+- [x] Interface desktop (PySide6)
+- [ ] API REST com Flask + banco SQLite
+- [ ] React.js básico
+- [ ] Deploy em Vercel/Heroku
+
+
+## 📞 Contato
+- **Email**: hsniz78@yahoo.com
+- **📍 Minas Gerais, BR**
