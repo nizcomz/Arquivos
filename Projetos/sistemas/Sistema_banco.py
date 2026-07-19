@@ -104,8 +104,8 @@ while True:
             print("Conta não identificada.")
         
 else:
-        time.sleep(2)
-        print("Opção inválida!")
+    time.sleep(2)
+    print("Opção inválida!")
 
 
 
