@@ -95,9 +95,8 @@ while True:
              print(f"Você transferiu R${valor_tr:.2f}")
              print(f"Saldo atual: R${saldo:.2f}")
              
-     else:
-         print("Valor inválido ou saldo insuficiente.")
-         
+         else:
+             print("Valor inválido ou saldo insuficiente.")  
     else:
         print("Conta não identificada.")
         
