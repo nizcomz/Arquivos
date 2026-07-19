@@ -1,4 +1,5 @@
 import time
+import sys
 
 print("Olá, seja bem vindo ao caixa do BancoGPT.py")
 nome = input("Digite seu nome: ").strip()
@@ -8,29 +9,28 @@ while not nome.replace(" ", "").isalpha():
     print("Digite um nome válido ! :/")
     nome = input("Digite seu nome: ").strip()
 
-print(f"Seja bem vindo ao caixa do BancoGPT.py ! {nome} ")
+print(f"Seja bem vindo ao caixa do BancoGPT.py {nome}! ")
 time.sleep(2)
     
 num_acesso = int(input("Digite seu número de acesso: ").strip())
 
 if num_acesso != 28032002:
     print("Número não encontrado!")
-    exit()
+    sys.exit()
 else:
     print("Número identificado!")
 
 time.sleep(2) 
 
-senha = input("Digite sua senha (Números): ")
+senha = int(input("Digite sua senha (Números): "))
 print("Aguarde ! :)")
 
-if senha != "1234":
-    print("Senha incorreta!")
-    exit()
+if senha == 1234:
+    print("Senha correta!")
 
 else:
-    print("Senha invalida !")
-    exit()
+    print("Senha incorreta !")
+    sys.exit()
 
 time.sleep(2)
 
