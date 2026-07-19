@@ -41,18 +41,22 @@ saldo = float(1000.00)
 # alt = alternativas 
 
 while True:
+    time.sleep(2)
     alt = input(
         "\n(1) Mostrar Saldo"
         "\n(2) Realizar Depósito"
         "\n(3) Realizar Saque"
         "\n(4) Sair"
+        "\n(5) Transferência"
         "\nEscolha uma opção: "
     )
 
     if alt == "1":
+        time.sleep(2)
         print(f"Seu saldo é de R${saldo:.2f}")
 
     elif alt == "2":
+        time.sleep(2)
         vlr_dep = float(input("Quanto você deseja depositar? "))
         if vlr_dep > 0:
             saldo += vlr_dep
@@ -62,20 +66,43 @@ while True:
             print("Valor de depósito inválido!")
 
     elif alt == "3":
+        time.sleep(2)
         vlr_saque = float(input("Quanto você deseja sacar? "))
 
-        if vlr_saque <= saldo:
+        if vlr_saque > 0 and vlr_saque <= saldo:
             saldo -= vlr_saque
             print(f"Saque realizado!")
             print(f"Seu saldo atual é de R${saldo:.2f}")
         else:
-            print("Saldo insuficiente!")
-
+            print("Saldo insuficiente!") 
     elif alt == "4":
         print("Encerrando o programa...")
         break
-
+    
+    elif alt == "5":
+        time.sleep(2)
+        num_conta = int(input("Digite o número da conta: "))
+        
+        if num_conta >= 0:
+         print("Número Identificado !")
+         valor_tr = float(input("Quanto você deseja transferir ?: R$"))
+            
+         if valor_tr > 0 and valor_tr <= saldo:
+             time.sleep(2)   
+             num_conta == 12345
+             print("Conta idetificada")
+             print(f"Você tranferiu: R${valor_tr:.2f} para a conta {num_conta}")
+             saldo -= valor_tr
+             print(f"Seu saldo atual é: R${saldo:.2f}")
+        
+         else:
+             time.sleep(2)
+             print("Número da conta não idetificada !")
+          
     else:
+            print("Valor não identificado ou saldo indisponivel !")
+else:
+        time.sleep(2)
         print("Opção inválida!")
 
 
