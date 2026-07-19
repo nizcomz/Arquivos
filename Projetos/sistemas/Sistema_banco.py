@@ -75,15 +75,17 @@ while True:
             print(f"Seu saldo atual é de R${saldo:.2f}")
         else:
             print("Saldo insuficiente!") 
+            
     elif alt == "4":
         print("Encerrando o programa...")
         break
     
     elif alt == "5":
+        
+        num_conta = int(input("Digite o número da conta: "))
 
-     num_conta = int(input("Digite o número da conta: "))
-
-     if num_conta == 12345:
+        if num_conta == 12345:
+            
          print("Conta identificada!")
 
          valor_tr = float(input("Quanto deseja transferir? R$ "))
@@ -96,9 +98,10 @@ while True:
              print(f"Saldo atual: R${saldo:.2f}")
              
          else:
-             print("Valor inválido ou saldo insuficiente.")  
-    else:
-        print("Conta não identificada.")
+            print("Valor inválido ou saldo insuficiente.")
+              
+        else:                       
+            print("Conta não identificada.")
         
 else:
         time.sleep(2)
