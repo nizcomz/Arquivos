@@ -38,7 +38,7 @@ print("Escolha uma opção !")
 
 saldo = float(1000.00)
 
-# alt = alternativas 
+# alt = alternativas
 
 while True:
     time.sleep(2)
@@ -81,7 +81,6 @@ while True:
         break
     
     elif alt == "5":
-        
         num_conta = int(input("Digite o número da conta: "))
 
         if num_conta == 12345:
