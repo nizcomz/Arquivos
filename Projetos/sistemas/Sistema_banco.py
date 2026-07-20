@@ -12,7 +12,7 @@ while not nome.replace(" ", "").isalpha():
 print(f"Seja bem vindo ao caixa do BancoGPT.py {nome}! ")
 time.sleep(2)
     
-num_acesso = int(input("Digite seu número de acesso: ").strip())
+num_acesso = int(input("Digite seu número de acesso: "))
 
 if num_acesso != 28032002:
     print("Número não encontrado!")
