@@ -2,8 +2,7 @@ def verificacao(login, senha):
     if "@" in login and ".com" in login and senha == "1234": 
         return True
     
-    else:
-        return False
+    return False
 
 login = input("Digite seu login: ")
 senha = input("Digite sua senha: ")
