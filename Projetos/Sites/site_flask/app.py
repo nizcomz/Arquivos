@@ -16,7 +16,7 @@ def processar_formulario():
     email = data.get("email", "não informado")
     mensagem = data.get("mensagem", "sem mensagem")
     
-    # Retorna resposta em JSON
+    # Retorna resposta 
     resposta = {
         "sucesso": True,
         "mensagem": f"Obrigado {nome}! Sua mensagem foi recebida.",

@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug app.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/Projetos/Sites/site_flask/app.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Projetos/Sites/site_flask",
+            "justMyCode": true
+        }
+    ]
+}
