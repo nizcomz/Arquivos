@@ -4,7 +4,7 @@ def historico(historico_transacoes):
         print(transacao)
 
 
-historico_transacoes = []
+historico_transacoes = [ ]
 
 
 while True:
@@ -18,7 +18,7 @@ while True:
     if opcao == "1":
         transacao = input("Digite a transação: ")
         historico_transacoes.append(transacao)
-        print("Transação adicionada com sucesso!")
+        print("Transação adicionada com sucesso!")  
 
     elif opcao == "2":
         historico(historico_transacoes)
@@ -28,3 +28,4 @@ while True:
         break
     else:
         print("Opção inválida. Tente novamente.")
+        
