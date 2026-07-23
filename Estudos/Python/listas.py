@@ -31,11 +31,14 @@ while True:
         escolha = input("Qual transação você seja realizar (Saque/Depósito): ")
 
         if escolha == "Saque": #Se a transação for "Saque", executa o bloco abaixo
-            valor_saque = float(input("Qual valor você deseja sacar ? ")) #V
-            if valor_saque > 0:
-                transacao = -valor_saque  # retorna o valor que foi sacado
-            else:
-                print("Valor inválido para saque.")
+            while True:
+                valor_saque = float(input("Qual valor você deseja sacar ? ")) #V
+                if valor_saque > 0:
+                    transacao = -valor_saque  # retorna o valor que foi sacado
+                    break
+                else:
+                    print("Valor inválido para saque.")
+                    
             
         elif escolha == "deposito": # se a escolha receber o valor deposito 
             valor_deposito = float(input("Qual valor você deseja depositar ? ")) 
