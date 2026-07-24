@@ -26,9 +26,28 @@ while True:
 
     # if = verifica uma condição, exemplo: if opcao == "1": executa se a condição for verdadeira
     if opcao == "1":
+        
         # transacao = armazena o que o usuário digita, exemplo: "Saque de 50 reais"
-        transacao = input("Digite a transação: ")
+        escolha = input("Qual transação você seja realizar (Saque/Depósito): ")
+
+        if escolha == "Saque": #Se a transação for "Saque", executa o bloco abaixo
+            while True:
+                valor_saque = float(input("Qual valor você deseja sacar ? ")) #V
+                if valor_saque > 0:
+                    transacao = -valor_saque  # retorna o valor que foi sacado
+                    break
+                else:
+                    print("Valor inválido para saque.")
+                    
+            
+        elif escolha == "deposito": # se a escolha receber o valor deposito 
+            valor_deposito = float(input("Qual valor você deseja depositar ? ")) 
+            if valor_deposito > 0:
+                transacao = valor_deposito
+            else:
+                print("Valor inválido !")
         # .append() = adiciona item ao final da lista, exemplo: lista.append("novo item")
+
         historico_transacoes.append(transacao)
         print("Transação adicionada com sucesso!")  
 
