@@ -38,11 +38,13 @@ while True:
                     print("Valor inválido para saque.")
                     
         elif escolha == "deposito": # se a escolha receber o valor deposito 
-            valor_deposito = float(input("Qual valor você deseja depositar ? ")) 
-            if valor_deposito > 0:
-                transacao = valor_deposito
-            else:
-                print("Valor inválido !")
+                while True:
+                    valor_deposito = float(input("Qual valor você deseja depositar ? ")) 
+                    if valor_deposito > 0:
+                        transacao = valor_deposito
+                        break
+                    else:
+                        print("Valor inválido !")
                 
         # .append() = adiciona item ao final da lista, exemplo: lista.append("novo item")
         historico_transacoes.append(transacao)
