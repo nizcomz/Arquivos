@@ -7,11 +7,9 @@ def historico(historico_transacoes):
         # cada transacao é exibida, exemplo: transacao = "Depósito de 100 reais"
         print(transacao)
 
-
 # = atribui um valor, exemplo: nome = "João" armazena "João" na variável nome
 # [ ] = cria uma lista vazia, exemplo: compras = [ ] cria uma lista para adicionar itens
 historico_transacoes = [ ]
-
 
 # while True = cria um loop infinito, exemplo: while True: faz o programa repetir forever até break
 while True:
@@ -39,15 +37,14 @@ while True:
                 else:
                     print("Valor inválido para saque.")
                     
-            
         elif escolha == "deposito": # se a escolha receber o valor deposito 
             valor_deposito = float(input("Qual valor você deseja depositar ? ")) 
             if valor_deposito > 0:
                 transacao = valor_deposito
             else:
                 print("Valor inválido !")
+                
         # .append() = adiciona item ao final da lista, exemplo: lista.append("novo item")
-
         historico_transacoes.append(transacao)
         print("Transação adicionada com sucesso!")  
 
